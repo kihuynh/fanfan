@@ -4,4 +4,4 @@ Book.destroy_all
   Book.create!(title: Faker::Book.title)
 end
 
-p "Created #{Book.count} spices"
+p "Created #{Book.count} books"
