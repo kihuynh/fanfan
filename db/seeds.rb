@@ -5,5 +5,5 @@ book_list = [
 ]
 
 book_list.each do |title, author, publisher, genre|
-  Book.create ( common_title: title, author_name: author, publisher_name: publisher, genre_name: genre)
+  Book.create ( title_name: title, author_name: author, publisher_name: publisher, genre_name: genre)
 end
