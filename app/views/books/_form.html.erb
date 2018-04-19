@@ -1,5 +1,17 @@
 <%= form_for @book do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :publisher %>
+  <%= f.text_field :publisher %>
+
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
   <%= f.submit %>
 <% end %>
+<!-- Currently only able to take in form title -->
+<!-- Nested Forms ^^ Look up how to grab all info from the fields.  -->
+<!-- http://guides.rubyonrails.org/form_helpers.html#nested-forms -->
