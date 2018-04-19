@@ -15,6 +15,11 @@ $ rake db:create
 $ rake db:migrate db:test:prepare
 $ bundle install
 ```
+Use if you want to use Faker DB instead <br>
+```
+$ rake db:seed
+```
+
 Run the rails server
 `
 $ rails s
