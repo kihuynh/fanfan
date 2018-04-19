@@ -1,9 +1,7 @@
-book_list = [
-  ["Harry Potter", "JK Rowling", "Some Pub", "fantasy"],
-  ["Learn how to hate", "Hateful Larry", "Hate Industries", "self-help"],
-  ["How not to lose your mind", "JK Nope", "Done", "self-help"]
-]
+Book.destroy_all
 
-book_list.each do |title, author, publisher, genre|
-  Book.create(title: title, author: author, publisher: publisher, genre: genre)
+10.times do |index|
+  Book.create!(title: Faker::Book.title)
 end
+
+p "Created #{Book.count} spices"
